@@ -25,7 +25,7 @@ app.use(cors({
 }));
 
 // Routes
-app.use('/api', UploadImage);
+app.use('https://croud-source-ai-slu1.vercel.app/api', UploadImage);
 app.use('/api/gemini', geminiRouter);
 app.use('/api/admin', adminAuthRouter);
 app.use('/api/chatbot', chatbotRouter);
