@@ -29,6 +29,12 @@ app.use('/api', UploadImage);
 app.use('/api/gemini', geminiRouter);
 app.use('/api/admin', adminAuthRouter);
 app.use('/api/chatbot', chatbotRouter);
+app.get('/', (req, res) => {
+      res.send({
+         activeStatus : true,
+         error : false,
+      })
+});
 
 console.log('✅ All routes mounted successfully');
 
