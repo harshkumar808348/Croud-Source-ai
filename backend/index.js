@@ -20,7 +20,7 @@ if (process.env.MONGODB_URI) {
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://croud-source-ai-svy1.vercel.app'],
   credentials: true
 }));
 
